@@ -38,7 +38,20 @@ public class MainActivity extends AppCompatActivity {
     public void soundOn(View view) {
         switch (view.getId()){
             case (R.id.sound1):
-
+                soundPool.play(sound1, 1,1,0,0,1);
+                break;
+            case(R.id.sound2):
+                soundPool.play(sound2,1,1,0,0,1);
+                break;
+            case(R.id.sound3):
+                soundPool.play(sound3, 1,1,0,0,1);
+                break;
+            case(R.id.sound4):
+                soundPool.play(sound4, 1,1,0,0,1);
+                break;
+            case(R.id.sound5):
+                soundPool.play(sound5, 1,1,0,0,1);
+                break;
 
         }
     }

@@ -43,10 +43,11 @@
         android:id="@+id/sound4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:onClick="soundOn"
         android:text="Sound 4"
         app:layout_constraintBaseline_toBaselineOf="@+id/sound3"
-        tools:layout_editor_absoluteX="289dp"
-        android:onClick="soundOn"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/sound5"
@@ -74,17 +75,21 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcom To"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="152dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Welcome To"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sound2"
+        app:layout_constraintEnd_toEndOf="@+id/sound2"
+        app:layout_constraintStart_toStartOf="@+id/sound1" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:text="The Soundboard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="359dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/sound5"
+        app:layout_constraintEnd_toEndOf="@+id/sound4"
+        app:layout_constraintStart_toStartOf="@+id/sound3" />
 </android.support.constraint.ConstraintLayout>
